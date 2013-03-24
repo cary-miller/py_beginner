@@ -11,7 +11,7 @@ a_variable = 'your message here'
 x = 2  # another comment
 
 
-this_is_a_list = [1, 2, 'a', 'b', a_variable]
+this_is_a_list = [222, 'x', 1, 'b', a_variable, 77]
 
 # We access list items by indexing
 item_2 = this_is_a_list[1]
@@ -21,7 +21,8 @@ item_1 = this_is_a_list[0]
 
 # Lists have *methods* that we can use to extract useful things or find out
 # more about the list or perform useful work.
-sorted_list = this_is_a_list.sort()
+this_is_a_list.sort()
+another_list = [1,1,2,3,5,8,13,21]
 
 
 this_is_a_dictionary = {'a':1, 'bb':33, 'another':a_variable}
@@ -30,9 +31,17 @@ a_thing = this_is_a_dictionary['bb']
 a_second_thing = this_is_a_dictionary['another']
 
 # Like lists, dictionaries have *methods* but not the same ones.
-d_keys = this_is_a_list.keys()
+d_keys = this_is_a_dictionary.keys()
 print d_keys
 # print is a a useful builtin function.
+d_vals = this_is_a_dictionary.values()
+d_things = this_is_a_dictionary.items()
+
+
+# We can *re-assign* the elements of a list.
+# We can *re-assign* the elements of a dictionary.
+# We can add new elements to a dictionary.
+# We can add new elements to a list.
 
 
 
