@@ -23,6 +23,7 @@ item_1 = this_is_a_list[0]
 # more about the list or perform useful work.
 this_is_a_list.sort()
 another_list = [1,1,2,3,5,8,13,21]
+titles = ['boss', 'peon', 'coder', 'illustrious']
 
 
 this_is_a_dictionary = {'a':1, 'bb':33, 'another':a_variable}
@@ -38,19 +39,27 @@ fish_sound = animals['fish']
 
 
 # Like lists, dictionaries have *methods* but not the same ones.
-d_keys = this_is_a_dictionary.keys()
-print d_keys
-# print is a a useful builtin function.
-d_vals = this_is_a_dictionary.values()
-d_things = this_is_a_dictionary.items()
+d_keys = animals.keys()
+print d_keys # print is a a useful builtin function.
+d_vals = animals.values()
+d_things = animals.items()
 
 
 # We can *re-assign* the elements of a list.
+titles[0] = 'collaborator'
+
 # We can *re-assign* the elements of a dictionary.
+animals['dog'] = 'arf'
+
 # We can add new elements to a dictionary.
+animals['koala'] = 'squeek'
+
 # We can add new elements to a list.
+titles.append('instigator')
 
 
+# Try it for yourself.
+# Experiment in the interactive interpreter.
 
 
 
@@ -93,6 +102,28 @@ def critter_sounds(animal_dct):
 
 critter_sounds(animals)
 
+
+
+
+# ################### Control Structures ################### # 
+
+# Control structures are a pain in the **** so we avoid them but they are
+# important to know.
+
+lst = [3,10,5]
+square_list = [square(x) for x in lst]
+2x_list = [2*x for x in lst]
+
+
+names = ('Rocky' ,'Natasha')
+greet = ['hello ' + name for name in names]
+lowercase_names = [name.lower() for name in names]
+
+
+
+
+more_squares = [square(x) for x in lst if x<7]
+more_doubles = [2*x for x in lst if x>4]
 
 
 
