@@ -2,6 +2,8 @@
 This is a triple-quoted comment
 '''
 
+# ################### Variables ################### # 
+
 a_variable = 1
 a_variable = 4356
 a_variable = 'a'
