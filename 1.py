@@ -30,6 +30,13 @@ this_is_a_dictionary = {'a':1, 'bb':33, 'another':a_variable}
 a_thing = this_is_a_dictionary['bb']
 a_second_thing = this_is_a_dictionary['another']
 
+
+animals = {'dog':'woof', 'cat':'meow', 'fish':'blub'}
+dog_sound = animals['dog']
+fish_sound = animals['fish']
+
+
+
 # Like lists, dictionaries have *methods* but not the same ones.
 d_keys = this_is_a_dictionary.keys()
 print d_keys
@@ -48,10 +55,43 @@ d_things = this_is_a_dictionary.items()
 
 
 
+# ################### Functions ################### # 
+
+def func1():
+    print 'hello'
+
+x = func1()
+# Note x has nothing in it.
+# Rather it contains the special value *None*.
 
 
+def yoohoo(name):
+    print 'hello', name
 
 
+yoohoo('Rocky')
+yoohoo('Natasha')
+
+
+def square(x):
+    return x * x
+
+square(2)
+square(3)
+
+
+def critter_names(animal_dct):
+    for critter in animal_dct:
+        print critter
+
+critter_names(animals)
+
+
+def critter_sounds(animal_dct):
+    for critter in animal_dct:
+        print animal_dct[critter]
+
+critter_sounds(animals)
 
 
 
